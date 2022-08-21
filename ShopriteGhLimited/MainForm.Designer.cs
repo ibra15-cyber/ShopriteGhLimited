@@ -516,8 +516,9 @@ namespace ShopriteGhLimited
             this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(200, 40);
+            this.panelMain.MinimumSize = new System.Drawing.Size(1200, 700);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(984, 621);
+            this.panelMain.Size = new System.Drawing.Size(1200, 700);
             this.panelMain.TabIndex = 2;
             // 
             // MainForm

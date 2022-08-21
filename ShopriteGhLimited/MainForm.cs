@@ -7,15 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ShopriteGhLimited
 {
     public partial class MainForm : Form
     {
+        //setting up a connection to database
+        SqlConnection cn = new SqlConnection(); //creating sql connection
+        SqlCommand cm = new SqlCommand(); //creating sql command
+        DBConnect dbcon = new DBConnect(); //creating a dbcon
+
+
         public MainForm()
         {
             InitializeComponent();
-            customizeDesign();
+            customizeDesign(); //calling our method below to handle show or hide, we try to hide all components that are child
+            cn = new SqlConnection(dbcon.myConnection());
+            cn.Open();
+            MessageBox.Show("Database connected");
         }
 
 
