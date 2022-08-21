@@ -41,7 +41,7 @@ namespace ShopriteGhLimited
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.btnPostRecord = new System.Windows.Forms.Button();
-            this.btnSaleHistory = new System.Windows.Forms.Button();
+            this.btnSalesHis = new System.Windows.Forms.Button();
             this.btnRecord = new System.Windows.Forms.Button();
             this.btnSupplier = new System.Windows.Forms.Button();
             this.panelSubStock = new System.Windows.Forms.Panel();
@@ -91,7 +91,7 @@ namespace ShopriteGhLimited
             this.panelSlide.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSlide.Location = new System.Drawing.Point(0, 0);
             this.panelSlide.Name = "panelSlide";
-            this.panelSlide.Size = new System.Drawing.Size(200, 684);
+            this.panelSlide.Size = new System.Drawing.Size(200, 661);
             this.panelSlide.TabIndex = 0;
             // 
             // btnLogout
@@ -108,7 +108,7 @@ namespace ShopriteGhLimited
             this.btnLogout.Text = "Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.button17_Click);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panelSubSetting
             // 
@@ -135,7 +135,7 @@ namespace ShopriteGhLimited
             this.btnStore.Text = "Store";
             this.btnStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStore.UseVisualStyleBackColor = true;
-            this.btnStore.Click += new System.EventHandler(this.button15_Click);
+            this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
             // 
             // btnUser
             // 
@@ -167,14 +167,14 @@ namespace ShopriteGhLimited
             this.btnSetting.Text = "Settings";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.UseVisualStyleBackColor = true;
-            this.btnSetting.Click += new System.EventHandler(this.button12_Click);
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // panelSubRecord
             // 
             this.panelSubRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(200)))));
             this.panelSubRecord.Controls.Add(this.panel1);
             this.panelSubRecord.Controls.Add(this.btnPostRecord);
-            this.panelSubRecord.Controls.Add(this.btnSaleHistory);
+            this.panelSubRecord.Controls.Add(this.btnSalesHis);
             this.panelSubRecord.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubRecord.Location = new System.Drawing.Point(0, 620);
             this.panelSubRecord.Name = "panelSubRecord";
@@ -236,22 +236,23 @@ namespace ShopriteGhLimited
             this.btnPostRecord.Text = "POST Record";
             this.btnPostRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPostRecord.UseVisualStyleBackColor = true;
-            this.btnPostRecord.Click += new System.EventHandler(this.button10_Click);
+            this.btnPostRecord.Click += new System.EventHandler(this.btnPostRecord_Click);
             // 
-            // btnSaleHistory
+            // btnSalesHis
             // 
-            this.btnSaleHistory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSaleHistory.FlatAppearance.BorderSize = 0;
-            this.btnSaleHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaleHistory.ForeColor = System.Drawing.Color.White;
-            this.btnSaleHistory.Location = new System.Drawing.Point(0, 0);
-            this.btnSaleHistory.Name = "btnSaleHistory";
-            this.btnSaleHistory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSaleHistory.Size = new System.Drawing.Size(183, 45);
-            this.btnSaleHistory.TabIndex = 5;
-            this.btnSaleHistory.Text = "Sale History";
-            this.btnSaleHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaleHistory.UseVisualStyleBackColor = true;
+            this.btnSalesHis.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalesHis.FlatAppearance.BorderSize = 0;
+            this.btnSalesHis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesHis.ForeColor = System.Drawing.Color.White;
+            this.btnSalesHis.Location = new System.Drawing.Point(0, 0);
+            this.btnSalesHis.Name = "btnSalesHis";
+            this.btnSalesHis.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSalesHis.Size = new System.Drawing.Size(183, 45);
+            this.btnSalesHis.TabIndex = 5;
+            this.btnSalesHis.Text = "Sale History";
+            this.btnSalesHis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalesHis.UseVisualStyleBackColor = true;
+            this.btnSalesHis.Click += new System.EventHandler(this.btnSalesHis_Click);
             // 
             // btnRecord
             // 
@@ -326,7 +327,7 @@ namespace ShopriteGhLimited
             this.btnStockEntry.Text = "Stock Entry";
             this.btnStockEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStockEntry.UseVisualStyleBackColor = true;
-            this.btnStockEntry.Click += new System.EventHandler(this.button6_Click);
+            this.btnStockEntry.Click += new System.EventHandler(this.btnStockEntry_Click);
             // 
             // btnInStock
             // 
@@ -371,7 +372,7 @@ namespace ShopriteGhLimited
             this.btnProductList.Text = "Product List";
             this.btnProductList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductList.UseVisualStyleBackColor = true;
-            this.btnProductList.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnProductList.Click += new System.EventHandler(this.btnProductList_Click);
             // 
             // btnCategory
             // 
@@ -403,7 +404,7 @@ namespace ShopriteGhLimited
             this.btnBrand.Text = "Brand";
             this.btnBrand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBrand.UseVisualStyleBackColor = true;
-            this.btnBrand.Click += new System.EventHandler(this.button4_Click);
+            this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
             // btnProduct
             // 
@@ -419,7 +420,7 @@ namespace ShopriteGhLimited
             this.btnProduct.Text = "Product";
             this.btnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.button1_Click);
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnDashboard
             // 
@@ -496,7 +497,7 @@ namespace ShopriteGhLimited
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(200, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(801, 40);
+            this.panelTitle.Size = new System.Drawing.Size(984, 40);
             this.panelTitle.TabIndex = 1;
             // 
             // lblTitle
@@ -516,7 +517,7 @@ namespace ShopriteGhLimited
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(200, 40);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(801, 644);
+            this.panelMain.Size = new System.Drawing.Size(984, 621);
             this.panelMain.TabIndex = 2;
             // 
             // MainForm
@@ -524,7 +525,7 @@ namespace ShopriteGhLimited
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.ClientSize = new System.Drawing.Size(1001, 684);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelSlide);
@@ -554,7 +555,6 @@ namespace ShopriteGhLimited
         private System.Windows.Forms.Panel panelSlide;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelTitle;
-        private System.Windows.Forms.Panel panelSubProduct;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panelMain;
@@ -567,7 +567,7 @@ namespace ShopriteGhLimited
         private System.Windows.Forms.Button btnInStock;
         private System.Windows.Forms.Panel panelSubRecord;
         private System.Windows.Forms.Button btnPostRecord;
-        private System.Windows.Forms.Button btnSaleHistory;
+        private System.Windows.Forms.Button btnSalesHis;
         private System.Windows.Forms.Button btnRecord;
         private System.Windows.Forms.Button btnSupplier;
         private System.Windows.Forms.Panel panelSubSetting;
@@ -583,6 +583,7 @@ namespace ShopriteGhLimited
         private System.Windows.Forms.Label lblAdministrator;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.FlowLayoutPanel panelSubProduct;
     }
 }
 

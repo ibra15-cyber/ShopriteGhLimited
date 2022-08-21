@@ -54,7 +54,7 @@ namespace ShopriteGhLimited
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            hideSubmenu();
         }
         private void btnProduct_Click(object sender, EventArgs e)
         {
@@ -79,7 +79,7 @@ namespace ShopriteGhLimited
 
         private void btnInStock_Click(object sender, EventArgs e)
         {
-            hideSubmenu();
+            showSubMenu(panelSubStock);
         }
 
         private void btnStockEntry_Click(object sender, EventArgs e)
@@ -94,17 +94,57 @@ namespace ShopriteGhLimited
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnRecord_Click(object sender, EventArgs e)
         {
-
+            showSubMenu(panelSubRecord);
         }
 
         private void btnUser_Click(object sender, EventArgs e)
         {
+            hideSubmenu();
+        }
+        private void flowLayoutPanel1_Paint(object sender, EventArgs e)
+        {
+            
+        }
+       
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalesHis_Click(object sender, EventArgs e)
+        {
+            hideSubmenu(); 
+        }
+
+        private void btnPostRecord_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSubSetting);
+        }
+
+        private void btnStore_Click(object sender, EventArgs e)
+        {
+            hideSubmenu();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+            hideSubmenu();
         }
     }
 }
