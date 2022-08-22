@@ -19,6 +19,7 @@ namespace ShopriteGhLimited
         DBConnect dbcon = new DBConnect(); //creating a dbcon
 
 
+
         public MainForm()
         {
             InitializeComponent();
@@ -155,6 +156,11 @@ namespace ShopriteGhLimited
         {
 
             hideSubmenu();
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

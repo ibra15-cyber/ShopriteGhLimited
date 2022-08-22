@@ -18,3 +18,5 @@ D:\School\300\DCIT 318 PROGRAMMING 2\troubleshoot\ShopriteGhLimited\ShopriteGhLi
 D:\School\300\DCIT 318 PROGRAMMING 2\troubleshoot\ShopriteGhLimited\ShopriteGhLimited\obj\Debug\ShopriteGhLimited.csproj.CoreCompileInputs.cache
 D:\School\300\DCIT 318 PROGRAMMING 2\troubleshoot\ShopriteGhLimited\ShopriteGhLimited\obj\Debug\ShopriteGhLimited.exe
 D:\School\300\DCIT 318 PROGRAMMING 2\troubleshoot\ShopriteGhLimited\ShopriteGhLimited\obj\Debug\ShopriteGhLimited.pdb
+D:\School\300\DCIT 318 PROGRAMMING 2\troubleshoot\ShopriteGhLimited\ShopriteGhLimited\obj\Debug\ShopriteGhLimited.Brand.resources
+D:\School\300\DCIT 318 PROGRAMMING 2\troubleshoot\ShopriteGhLimited\ShopriteGhLimited\obj\Debug\ShopriteGhLimited.BrandModule.resources
